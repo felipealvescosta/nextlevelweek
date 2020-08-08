@@ -22,7 +22,7 @@ function TeacherForm() {
 
     const [subject, setSubject] = useState('');
     const [cost, setCost] = useState('');
-
+    console.log('vai');
     const [scheduleItems, setScheduleItems] = useState([
         { week_day: 0, from: '', to: '' }
     ]);
