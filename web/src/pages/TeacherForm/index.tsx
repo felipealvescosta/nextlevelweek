@@ -50,7 +50,7 @@ function TeacherForm() {
 
     function handleCreateClass(e: FormEvent) {
         e.preventDefault();
-
+       
         api.post('classes', {
             name,
             avatar,
@@ -63,8 +63,9 @@ function TeacherForm() {
             alert('Cadastro realizado com sucesso!');
 
             history.push('/');
-        }).catch(() => {
-            alert('Erro no cadastro!');
+        }).catch((error) => {
+            alert('Erro ao cadastrar!');
+            console.log('Erro no cadastro!'+error);
         })
 
     }

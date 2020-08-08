@@ -53,7 +53,7 @@
 
   text-decoration: none;
 
-  color: var(--button-color-text);
+  color: var(--color-title-in-primary);
 
   transition: background-color 0.2s;
 }
